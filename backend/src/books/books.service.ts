@@ -22,7 +22,7 @@ export class BooksService {
     return this.bookModel.findByIdAndDelete(id).exec();
   }
 
-  async update(id: string, bookData: Partial<Book>): Promise<Book> {
+  async update(id: string, bookData: Partial<Book>): Promise<Book | null> {
     return this.bookModel.findByIdAndUpdate(id, bookData, { new: true }).exec();
   }
 }
