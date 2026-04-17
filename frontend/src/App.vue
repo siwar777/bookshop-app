@@ -55,15 +55,15 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif;
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #fff0f5;
 }
 
 .navbar {
-  background: linear-gradient(to right, #0a1a3a, #1a5fb4);
+  background: linear-gradient(to right, #8b0050, #e91e8c);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -74,6 +74,7 @@ body {
   color: white;
   font-size: 22px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .navbar-links a {
@@ -89,35 +90,44 @@ body {
 }
 
 .favourites-link {
-  color: red !important;
+  color: #ffe0f0 !important;
+  font-weight: bold;
 }
 
 button {
-  background: linear-gradient(to bottom, #1a5fb4, #0a1a3a);
+  background: linear-gradient(to bottom, #e91e8c, #8b0050);
   color: white;
   border: none;
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 button:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 input, textarea, select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #f48fb1;
+  border-radius: 8px;
   font-size: 14px;
+  background-color: #fff5f9;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #e91e8c;
 }
 
 label {
   font-weight: bold;
-  display: block;
+    display: block;
   margin-top: 15px;
+  color: #8b0050;
 }
 </style>
