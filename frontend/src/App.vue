@@ -47,6 +47,11 @@ export default {
       this.$router.push('/login')
     },
   },
+  watch: {
+    $route() {
+      this.$forceUpdate()
+    },
+  },
 }
 </script>
 
